@@ -1,0 +1,53 @@
+123123
+.first-post--stiker {
+  .container();
+  position: relative;
+}
+.first-post--stiker::before {
+  content: "панорама дня";
+  position: absolute;
+  top: 60px;
+  right: 0;
+  text-transform: uppercase;
+  width: 142px;
+  height: 37px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 35px;
+  color: white;
+  display: block;
+  background-color: @global-text-color;
+  text-align: center;
+}
+.first-post__image {
+  width: 100%;
+  max-height: 500px;
+}
+
+.first-post__daily {
+  min-height: 137px;
+  .container();
+}
+
+@media screen and (min-width: 700px) {
+  .first-post__daily {
+    position: relative;
+  }
+  .first-post__stiker {
+    top: 40px;
+    right: 50px;
+  }
+  .first-post__image {
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 500px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .first-post__stiker {
+    top: 10%;
+    right: 20%;
+  }
+}

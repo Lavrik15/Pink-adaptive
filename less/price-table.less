@@ -1,0 +1,58 @@
+.price-table {
+  width: 85%;
+  margin: 0 auto;
+  background-color: white;
+  border-collapse: collapse;
+  text-align: left;
+  th {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: @text-color;
+  border: 1px solid #e5e5e5;
+  background-color: @main-text-color;
+  padding: 13px 10px;
+  }
+  td {
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  color: @main-text-color;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  padding: 11px 10px 10px 20px;
+  }
+}
+
+.price-table__tariff {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @text-color;
+}
+
+.price-table span {
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.price-table--check-on::after {
+  position: absolute;
+  right: 22px;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: no-repeat url(../img/yes.png) 50% 50% #fff;
+}
+
+.price-table--check-off::after {
+  position: absolute;
+  right: 22px;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background: no-repeat url(../img/no.png) 50% 50% #fff;
+}

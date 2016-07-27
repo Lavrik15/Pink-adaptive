@@ -1,0 +1,131 @@
+.application {
+  background: @bg-color;
+}
+
+.application-wrapper {
+  .container();
+  text-align: center;
+}
+
+.application--icon {
+  display: block;
+}
+
+.application-options--col {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.application-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 45px;
+  padding-top: 15px;
+}
+
+.application-scale::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 240px;
+  height: 2px;
+  background-color: @main-text-color;
+  left: 46px;
+  bottom: 145px;
+}
+
+.application-scale::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: 70px;
+  bottom: 141px;
+  background-color: white;
+  box-shadow: 0px 0px 0px 2px @global-text-color;
+}
+
+.application__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-top: 85px;
+}
+
+.application__cancel,
+.application__post-it {
+  background: #f2f2f2;
+  border-radius: 50px;
+  border: 3px solid @global-text-color;
+  font-size: 18px;
+  line-height: 18px;
+  color: @global-text-color;
+  font-weight: bold;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .application-wrapper {
+    display: flex;
+
+  }
+  .application-options {
+     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-left: 65px;
+  }
+
+  .application-scale {
+    display: none;
+  }
+
+  .application-options__cut {
+    position: relative;
+    margin-left: 0px;
+  }
+  .application-options__fill {
+    position: relative;
+  }
+  .application-options__contrast {
+    position: relative;
+  }
+  .application__buttons {
+    margin-top: 15px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .application__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .application__buttons button {
+    width: 184px;
+  }
+  .application {
+    background: none;
+  }
+  .application-wrapper {
+    background: @bg-color;
+    box-sizing: border-box;
+    padding-left: 79px;
+    padding-top: 57px;
+    padding-bottom: 55px;
+  }
+  .application-options {
+    justify-content: flex-start;
+  }
+  .application-options--col {
+    margin-bottom: 55px;
+  }
+}

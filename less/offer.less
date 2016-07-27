@@ -1,0 +1,228 @@
+.offer__slogan {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: @main-text-color;
+}
+
+.offer__title {
+  font-size: 24px;
+  color: @main-text-color;
+
+}
+
+.offer__slogan:first-child {
+  padding: 37px;
+  padding-bottom: 32px;
+}
+
+.offer__features__desktop-wrapper {
+  margin-bottom: 28px;
+}
+
+.offer__features-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.offer__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @main-text-color;
+  width: 275px;
+  margin: 0 auto;
+}
+
+.offer {
+  text-align: center;
+}
+
+.offer__wrapper {
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 250px;
+  .container();
+}
+.offer__features--wrapper::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 60px;
+    top: -34px;
+    position: absolute;
+    background-image: linear-gradient(-5deg, #f2f2f2 50%, #f2f2f2 50%, white 50%);
+}
+
+.offer__features {
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+  padding-top: 48px;
+}
+
+.offer__features::after {
+    content: "";
+    height: 287px;
+    display: block;
+    bottom: 0;
+    background: url(../img/iphone-screen-mobile@1x.png) no-repeat 50% 9px;
+}
+.offer__features--wrapper {
+  background-color: @bg-color;
+  position: relative;
+}
+
+@media screen and (min-width: 700px) {
+  .offer__features-title {
+    margin-top: 0px;
+  }
+  .offer__wrapper {
+    padding-bottom: 60px;
+    padding-top: 51px;
+  }
+  .offer__features {
+    text-align: left;
+    padding: 0 0 0 50%;
+  }
+  .offer__features::after {
+    content: "";
+    height: 484px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0;
+    display: block;
+    background: url(../img/Iphone3.png) no-repeat 42px 9px;
+    background-size: 265px auto;
+  }
+
+  .offer__features--wrapper::after {
+    height: 69px;
+    top: -20px;
+  }
+  .offer__features__desktop-wrapper::first-child {
+    padding-top: 34px;
+  }
+  .offer__slogan {
+    font-size: 40px;
+    line-height: 47px;
+  }
+  .offer__slogan:first-child {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .offer__text {
+    margin: 0;
+  }
+  .offer__features--wrapper {
+    padding-top: 83px;
+    box-sizing: border-box;
+    min-height: 485px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .offer__features::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 144px;
+    bottom: 486px;
+    background-image: linear-gradient(176deg, white 50%, #f2f2f2 50%);
+    position: absolute;
+  }
+  .offer__features {
+    padding: 0;
+    min-height: 515px;
+    box-sizing: border-box;
+    .clearfix();
+    text-align: center;
+  }
+  .offer__slogan:first-child {
+    padding: 0px;
+  }
+  .offer__features__desktop-wrapper{
+    width: 300px;
+    position: relative;
+    margin-bottom: 0px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 242px;
+  }
+  .offer__features-title {
+    width: 230px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .offer__features::after {
+    display: none;
+  }
+  .offer__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: @main-text-color;
+  }
+  .offer__features__desktop-wrapper:first-child::after {
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 182px;
+    left: 13.68%;
+    bottom: 213px;
+    display: block;
+    background: url(../img/Iphone-screen1.png) no-repeat 20% 0%;
+    background-size: 182px 382px;
+  }
+  .offer__features__desktop-wrapper:nth-child(2)::after {
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 183px;
+    left: 18.9%;
+    bottom: 244px;
+    display: block;
+    background: url(../img/IphoneScreen2.png) no-repeat 0px 0px;
+    background-size: 182px 382px;
+  }
+  .offer__features__desktop-wrapper:last-child::after {
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 182px;
+    left: 25.1%;
+    bottom: 213px;
+    display: block;
+    background: url(../img/IphoneScreen3.png) no-repeat 100% 0%;
+    background-size: 182px 382px;
+  }
+
+  .offer__wrapper .offer__slogan {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .offer__wrapper {
+    .container();
+    box-sizing: border-box;
+    min-height: 331px;
+    padding-top: 67px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .offer {
+    padding-top: 0px;
+    position: relative;
+  }
+}

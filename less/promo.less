@@ -1,0 +1,286 @@
+.promo__header-text {
+  font-size: 14px;
+  line-height: 30px;
+  color: @main-text-color;
+}
+
+.promo__download__main-link {
+  color: @text-color;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  max-width: 283px;
+  margin: 0 auto 35px;
+  border: 3px solid #fff;
+  border-radius: 28px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.promo-download__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #d3d4d5;
+  text-align: center;
+}
+
+.promo {
+  position: relative;
+}
+
+.promo-header {
+  min-height: 457px;
+  padding: 0 20px;
+  background:
+              url(../img/iphone-5-in-hand-png.png) no-repeat 50% 171px,
+              url(../img/bg-back-mobile.jpg) no-repeat 50% 0px;
+  background-size: contain,cover;
+  text-align: center;
+}
+
+.promo-header__text {
+  display: none;
+  font-size: 40px;
+  color: @text-color;
+  line-height: 44px;
+}
+
+.promo__download {
+  padding: 25px 20px 18px;
+  background-color: #1d2630;
+}
+
+.promo__download-buttons {
+  max-width: 240px;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  margin: 0 auto 15px;
+}
+
+.promo__download-buttons li {
+  display: inline-block;
+}
+
+.promo-header-form-page {
+  margin-bottom: 48px;
+}
+
+.promo-download__button {
+  display: block;
+  width: 65px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.promo-download__button--apple {
+  background: url(../img/logo-apple.svg) no-repeat 18px -1px;
+}
+
+.promo-download__button--android {
+  background: url(../img/logo-android.svg) no-repeat 13px 7px;
+}
+
+.promo-download__button--wf {
+  background: url(../img/logo-microsoft.svg) no-repeat 50% 50%;
+  margin-right: 0px;
+}
+
+// photo.html ***********************************************************************
+.promo-header__page {
+  min-height: 237px;
+  background: url(../img/bg-back-mobile.jpg) no-repeat 50% 0px;
+  background-size: cover;
+}
+
+.promo-header__page-text {
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 300;
+  color: @text-color;
+  padding: 95px 20px 0 20px;
+}
+
+.promo-page {
+  padding: 20px 50px 20px;
+  text-align: center;
+}
+
+.promo__page {
+  font-size: 14px;
+  font-weight: 30px;
+  color: @main-text-color;
+  text-align: center;
+  .container();
+}
+
+.promo__page-photo {
+  .container();
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: @main-text-color;
+}
+
+@media screen and (min-width: 700px) {
+  .promo-header__page-text {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .promo__header-text {
+    font-size: 18px;
+  }
+}
+.promo-header-form-page {
+  line-height: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .promo-header__page {
+    background: url(../img/bg-back-mobile.jpg) no-repeat 102% -251px;
+  }
+}
+
+//form.html adaptive *******************************************************************
+
+.promo-form-page {
+  padding: 0px;
+  box-sizing: border-box;
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+.promo-form-page-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  .promo-form-page-hidden {
+    display: inline-block;
+  }
+  .promo-form-page {
+  .container();
+  box-sizing: border-box;
+  padding: 0px 40px 0px 40px;
+  }
+}
+
+// index.html adaptive
+@media screen and (min-width: 700px) {
+  .promo-header__text {
+    display: block;
+    position: absolute;
+    top: 209px;
+    left: 94px;
+  }
+  .promo-header {
+    min-height: 728px;
+    padding: 0 20px;
+    background: url(../img/iphone-6.png) no-repeat 4px 187px, url(../img/bg-back-mobile.jpg) no-repeat 50% 0px;
+    background-size: 695px,cover;
+    text-align: center;
+  }
+  .promo__download {
+    position: absolute;
+    bottom: 87px;
+    left: 21px;
+    background: transparent;
+  }
+  .promo__download__main-link {
+    padding: 0px;
+    position: absolute;
+    left: 22px;
+    top: -79px;
+    width: 285px;
+  }
+  .promo-download__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .offer__wrapper .offer__slogan {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .promo-header {
+    min-height: 854px;
+    padding: 0 20px;
+    background: url(../img/iphone-6-bgdesktop.png) no-repeat 110% 209px, url(../img/back-desktop.jpg) no-repeat 50% 0px;
+    background-size: 1050px,cover;
+    text-align: center;
+  }
+  .promo__download {
+    left: 10%;
+    bottom: 14%;
+  }
+  .promo-header__text {
+    top: 26%;
+    left: 14%;
+    font-size: 50px;
+    line-height: 56px;
+  }
+}
+
+// photo.html adaptive **********************************************************************
+@media screen and (min-width: 700px) {
+.promo-header__page {
+  min-height: 440px;
+  padding: 0 20px;
+  background: url(../img/bg-back-mobile.jpg) no-repeat 50% 0px;
+  background-size: cover;
+  text-align: center;
+  }
+}
+
+@media  screen and (min-width: 1200px) {
+  .promo-header__page {
+    min-height: 395px;
+  }
+  .promo-header__page-text {
+    padding: 15% 0 0 0;
+    font-size: 50px;
+  }
+}
+
+//form.html adaptive **********************************************************8
+
+@media screen and (min-width: 700px) {
+  .page-form__text {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .promo-header__page-text {
+    padding: 25% 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .promo-header__page-text {
+    padding: 178px 0 0 0;
+    width: 352px;
+    line-height: 57px;
+    text-align: center;
+    margin: 0 auto
+  }
+  .promo-page {
+    width: 574px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 92px 0px 87px 0px;
+  }
+    .promo__page-photo__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 55px;
+  }
+}

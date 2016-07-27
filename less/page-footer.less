@@ -1,0 +1,31 @@
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 128px;
+  }
+
+  .page-footer-designed-text {
+    display: flex;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: @main-text-color;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .page-footer__designed {
+    display: flex;
+  }
+
+  @media screen and (min-width: 700px) {
+    .page-footer {
+      flex-direction: row;
+    }
+    .page-footer__logo {
+      padding-bottom: 30px;
+    }
+  }
+

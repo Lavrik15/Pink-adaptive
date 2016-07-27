@@ -1,0 +1,178 @@
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slide {
+  display: none;
+}
+
+.slider__toggle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  vertical-align: top;
+  background: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 17px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: -50px;
+  left: 32%;
+  width: 100px;
+  text-align: center;
+}
+
+
+.slider-wrapper li {
+    text-align: center;
+    list-style: none;
+}
+.slider-wrapper {
+    overflow: hidden;
+    min-height: 180px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+.slide-wrapper--move {
+  display: flex;
+    position: relative;
+}
+
+#btn-1:checked ~ .slide-wrapper--move .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slide-wrapper--move .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slide-wrapper--move .slide:nth-child(3) {
+  display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  vertical-align: top;
+  background: #fff;
+  box-shadow: 0 0 0 3px #283645;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  .slide {
+    width: 615px;
+  }
+  .slider-wrapper {
+    width: 615px;
+    min-height: 260px
+  }
+  .slider-controls {
+    position: absolute;
+    bottom: 14px;
+    left: 42%;
+    width: 100px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slide {
+    width: 700px;
+  }
+  .slider-wrapper {
+    width: 700px;
+  }
+  .sliders-arrow--right {
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    cursor: pointer;
+    &:before {
+      content: "";
+      width: 42px;
+      display: block;
+      height: 2px;
+      background: gray;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 31%;
+      right: 22%;
+      border-radius: 10px;
+    }
+    &:after {
+      content: "";
+      width: 42px;
+      display: block;
+      height: 2px;
+      background: gray;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 68%;
+      right: 22%;
+      border-radius: 10px;
+    }
+  }
+  .sliders-arrow--left {
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    cursor: pointer;
+    &:before {
+      content: "";
+      width: 42px;
+      display: block;
+      height: 2px;
+      background: gray;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 31%;
+      right: 22%;
+      border-radius: 10px;
+    }
+    &:after {
+      content: "";
+      width: 42px;
+      display: block;
+      height: 2px;
+      background: gray;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 68%;
+      right: 22%;
+      border-radius: 10px;
+    }
+  }
+  .slider-controls label {
+    display: none;
+  }
+  #btn-1:checked ~ .slider-controls label[for="btn-1"],
+  #btn-2:checked ~ .slider-controls label[for="btn-2"],
+  #btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    display: none;
+  }
+  .slide {
+    display: block;
+  }
+}

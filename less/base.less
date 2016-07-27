@@ -1,0 +1,61 @@
+body {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 24px;
+  font-size: 14px;
+  background-color: white;
+}
+
+#map {
+  width: 100%;
+  min-height: 200px
+}
+
+@media screen and (min-width: 700px) {
+  #map {
+  width: 100%;
+  min-height: 400px;
+}
+
+}
+fieldset {
+  padding: 0px;
+  margin: 0px;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 200px; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0px 0px 0px 2px @global-text-color;
+      margin-top: -4px;
+    }
+input[type=range]::-webkit-slider-runnable-track {
+      width: 191px;
+      height: 2px;
+      background-color: @main-text-color;
+}

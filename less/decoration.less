@@ -1,0 +1,37 @@
+.decoration__offer {
+  z-index: 10;
+  bottom: -251px;
+  position: absolute;
+  width: 100%;
+  min-height: 70px;
+  background: linear-gradient(to bottom right, transparent 50%, gray 50%, #f2f2f2 50%);
+}
+
+.decoration__review {
+  position: absolute;
+  bottom: -103px;
+  width: 100%;
+  min-height: 26px;
+  background: linear-gradient(to bottom right, transparent 50%, gray 50%, #f2f2f2 50%);
+}
+
+@media screen and (min-width: 700px) {
+  .decoration__review {
+    min-height: 40px;
+  }
+  .decoration__offer {
+    z-index: 3;
+    top: 973px;
+    bottom: 509px;
+    position: absolute;
+    width: 100%;
+    min-height: 40px;
+    background: linear-gradient(to bottom right, white 50%, gray 50%, #f2f2f2 50%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .decoration__offer {
+    display: none;
+  }
+}

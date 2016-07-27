@@ -1,0 +1,80 @@
+.research {
+  display: none;
+  .clearfix();
+}
+
+.research-wrapper {
+  min-height: 220px;
+  max-width: 305px;
+}
+
+.research-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  display: block;
+}
+
+.research-link {
+  color: @global-text-color;
+  size: 14px;
+}
+
+.research-text {
+  color: @main-text-color;
+}
+
+@media screen and (min-width: 700px) {
+  .research {
+    display: block;
+    .clearfix();
+    background: url(../img/24.png) no-repeat 9% 99%;
+    padding-top: 105px;
+    padding-bottom: 20px;
+  }
+  .research-bg {
+    display: block;
+    .container();
+  }
+  .research-wrapper {
+    float: right;
+    margin-right: 31px;
+  }
+  .research-title {
+    width: 170px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .research {
+
+    background: url(../img/desktop-bg-24.png) no-repeat 15% 50px @bg-color;
+    padding-bottom: 123px;
+  }
+  .research-bg {
+    display: block;
+    .container();
+  }
+  .research-wrapper {
+    float: left;
+    width: 528px;
+    padding-left: 42%;
+  }
+  .research-text {
+    min-width: 528px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .research-title {
+    display: inline-block;
+    width: auto;
+    margin-right: 3px;
+    margin-top: 37px;
+    margin-bottom: 5px;
+  }
+  .research-link {
+    font-size: 18px;
+    line-height: 30px
+  }
+}
