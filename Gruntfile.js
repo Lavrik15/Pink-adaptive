@@ -1,3 +1,4 @@
+
 module.exports = function(grunt) {
 
     // 1. Вся настройка находится здесь
@@ -70,4 +71,5 @@ module.exports = function(grunt) {
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['concat','uglify','imagemin','less','watch']);
+
 };
