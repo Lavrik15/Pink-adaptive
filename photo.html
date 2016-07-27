@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+<body>
+
+
+  <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo">
+            <a class="main-nav__title" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="build/images/logotype-white-desktop.png">
+                <source media="(min-width: 700px)" srcset="build/images/logotype-white-tablet.png">
+                <img src="build/images/logo-pink-white-mobile.svg" alt="Пинк">
+              </picture>
+            </a>
+          </div>
+          <button type="button" class="main-nav__toggle">menu</button>
+        </div>
+        <ul class="main-nav__list main-nav__list--closed">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main class="main-content">
+
+
+    <section class="promo">
+      <div class="promo-header promo-header__page">
+          <b class="promo-header__page-text">Фотографии пользователей</b>
+      </div>
+      <p class="promo__header-text promo-page">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших данных?</p>
+    </section>
+
+
+    <section class="first-post">
+      <div class="first-post--stiker"></div>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="build/images/panorama-desktop.jpg">
+        <source media="(min-width: 700px)" srcset="build/images/panorama-tablet.jpg">
+        <img class="first-post__image" src="build/images/panorama-mobile@1x.jpg">
+      </picture>
+    </section>
+    <section class="post post-top">
+      <div class="post-top--first">
+        <span class="post-author">Анна</span>
+        <span class="post-time">(5 минут назад)</span>
+        <p class="post-text"> Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+        <div class="post-like">нравится: 255</div>
+      </div>
+    </section>
+
+    <section class="post__adaptive">
+      <section class="post">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="build/images/photo-1-desktop.jpg">
+          <img src="build/images/photo-1-mobile@1x.jpg" alt="" class="post-image">
+        </picture>
+        <div class="post-wrapper">
+          <span class="post-author">Левон</span>
+          <span class="post-time">(5 часов назад)</span>
+          <p class="post-text"> Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="post-like">нравится: 356</div>
+        </div>
+      </section>
+
+      <section class="post">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="build/images/photo-2-desktop.jpg">
+          <img src="build/images/photo-2-mobile@1x.jpg" alt="" class="post-image">
+        </picture>
+        <div class="post-wrapper">
+          <span class="post-author">Антон</span>
+          <span class="post-time">(12 часов назад)</span>
+          <p class="post-text"> Соседи будут рады!</p>
+          <div class="post-like">нравится: 666</div>
+        </div>
+      </section>
+
+      <section class="post">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="build/images/photo-3-desktop.jpg">
+          <img src="build/images/photo-3-mobile@1x.jpg" alt="" class="post-image">
+        </picture>
+        <div class="post-wrapper">
+          <span class="post-author">Борис</span>
+          <span class="post-time">(12 часов назад)</span>
+          <p class="post-text"> Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="post-like">нравится: 215</div>
+        </div>
+      </section>
+
+      <section class="post">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="build/images/photo-4-desktop.jpg">
+          <img src="build/images/photo-4-mobile@1x.jpg" alt="" class="post-image">
+        </picture>
+        <div class="post-wrapper">
+          <span class="post-author">Сергей</span>
+          <span class="post-time">(25 часов назад)</span>
+          <p class="post-text"> Самая кубанская в мир!</p>
+          <div class="post-like">нравится: 4</div>
+        </div>
+      </section>
+
+      <section class="post">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="build/images/photo-5-desktop.jpg">
+          <img src="build/images/photo-5-mobile@1x.jpg" alt="" class="post-image">
+        </picture>
+        <div class="post-wrapper">
+          <span class="post-author">Максим</span>
+          <span class="post-time">(40 часов назад)</span>
+          <p class="post-text"> Где снег-то?</p>
+          <div class="post-like">нравится: 150</div>
+        </div>
+      </section>
+
+      <section class="post">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="build/images/photo-6-desktop.jpg">
+          <img src="build/images/photo-6-mobile@1x.jpg" alt="" class="post-image">
+        </picture>
+        <div class="post-wrapper">
+          <span class="post-author">Надежда</span>
+          <span class="post-time">(45 часов назад)</span>
+          <p class="post-text">Всем GM и взаимные лайки!</p>
+          <div class="post-like">нравится: 2560</div>
+        </div>
+      </section>
+      </div>
+
+    <section class="promo__page-photo">
+      <p class="promo__page-photo__text">Затмите их всех!
+      Выкладывайте все, что накопилось в телефоне!</p>
+    </section>
+
+  </section>
+
+
+  <section class="application">
+    <div class="application-wrapper">
+      <img src="build/images/photo-7-mobile@1x.jpg" alt="" class="application-img">
+      <div class="application-options">
+        <form action="http://echo.htmlacademy.ru" method="post">
+          <div class="application-options__cut  application-options--col">
+            <a href=""><img class="application--icon" src="build/images/icon-editor-crop.svg" alt="обрезать"></a>
+            <input
+              type="range"
+              min="0"
+              max="50"
+              step="1"
+              value="12"
+              data-orientation="vertical"
+            >
+          </div>
+          <div class="application-options__fill  application-options--col">
+            <a href=""><img class="application--icon" src="build/images/icon-editor-fill.svg" alt="обрезать"></a>
+            <input
+              type="range"
+              min="0"
+              max="50"
+              step="1"
+              value="12"
+              data-orientation="vertical"
+            >
+          </div>
+          <div class="application-options__contrast  application-options--col">
+            <a href=""><img class="application--icon" src="build/images/icon-editor-contrast.svg" alt="заливка"></a>
+            <input
+              type="range"
+              min="0"
+              max="50"
+              step="1"
+              value="12"
+              data-orientation="vertical"
+            >
+          </div>
+
+          <div class="application__buttons">
+            <button type="submit" class="application__post-it">Запостить</button>
+            <button type="button" class="application__cancel">Отмена</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+  </main>
+<div id="slider"></div>
+  <footer class="page-footer">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="build/images/logotype-blue-desktop.png">
+            <img src="build/images/logo-pink-blue-mobile.svg" alt="Пинк">
+          </picture>
+        </a>
+      </div>
+      <ul class="social-links">
+        <li><a class="social-link  social-link--tw" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
+        <li><a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
+        <li><a class="social-link  social-link--youtube" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a></li>
+      </ul>
+      <div class="page-footer__designed">
+        <b class="page-footer-designed-text">Разработано</b>
+        <a class="page-footer-designed-ogo" href="http://htmlacademy.ru">
+          <img src="build/images/logo-htmlacademy.svg" alt="htmlacademy.ru">
+        </a>
+      </div>
+    </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav__list');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav__list--closed')) {
+        navMain.classList.remove('main-nav__list--closed');
+        navMain.classList.add('main-nav__list--opened');
+        navMain.classList.add('main-nav__list--opened');
+      } else {
+        navMain.classList.add('main-nav__list--closed');
+        navMain.classList.remove('main-nav__list--opened');
+      }
+    });
+  </script>
+</body>
+</html>

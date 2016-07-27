@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo">
+            <a class="main-nav__title" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="build/images/logotype-white-desktop.png">
+                <source media="(min-width: 700px)" srcset="build/images/logotype-white-tablet.png">
+                <img src="build/images/logo-pink-white-mobile.svg" alt="Пинк">
+              </picture>
+            </a>
+          </div>
+          <button class="main-nav__toggle">menu</button>
+        </div>
+        <ul id="menu" class="main-nav__list main-nav__list--closed">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+
+      <section class="promo">
+        <div class="promo-header">
+          <div class="promo-header__text">
+            Взгляните<br> на жизнь<br> иначе!
+          </div>
+        </div>
+        <div class="promo__download">
+          <a href="index.html" class="promo__download__main-link">Скачать приложение</a>
+          <ul class="promo__download-buttons">
+            <li><a href="index.html" class="promo-download__button promo-download__button--apple">Apple</a></li>
+            <li><a href="index.html" class="promo-download__button promo-download__button--android">Google play</a></li>
+            <li><a href="index.html" class="promo-download__button promo-download__button--wf">Windows Phone</a></li>
+          </ul>
+          <p class="promo-download__text">Доступно для iPhone, iPad, Android,<br>Windows Phone,OS X, Windows 8</p>
+        </div>
+
+      </section>
+
+      <section class="offer">
+        <div class="offer__wrapper">
+          <span class="offer__slogan">Устали от серости мегаполиса?</span>
+          <span class="offer__slogan">Нам есть, что вам <br>предложить!</span>
+        </div>
+          <div class="offer__features--wrapper">
+            <div class="offer__features">
+              <div class="offer__features__desktop-wrapper">
+                <h2 class="offer__features-title">Поднимает настроение</h2>
+                <p class="offer__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </div>
+              <div class="offer__features__desktop-wrapper">
+                <h2 class="offer__features-title">Меняет мир вокруг</h2>
+                <p class="offer__text">Сделайте снимок и украсьте его<br> смайликом или текстовой подписью,<br> чтобы усилить эффект</p>
+              </div>
+              <div class="offer__features__desktop-wrapper">
+                <h2 class="offer__features-title">Заводит новых друзей</h2>
+                <p class="offer__text">Ставьте лайки, комментируте, делитесь<br> фотографиями с друзьями и заводите новых</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="research">
+        <div class="research-bg">
+          <div class="research-wrapper">
+            <span class="research-title">Эффект</span>
+            <span class="research-title">на 24 часа!</span>
+            <p class="research-text">Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится
+            целые сутки!</p>
+            <a href="" class="research-link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="review">
+        <div class="review-wrapper">
+          <div class="slider">
+                      
+            <div id="arrow-right" class="sliders-arrow--right"></div>
+            <div id="arrow-left" class="sliders-arrow--left"></div>
+            <ul  class="slider-wrapper">
+            <input type="radio" id="btn-1" name="toggle">
+            <input type="radio" id="btn-2" name="toggle" checked>
+            <input type="radio" id="btn-3" name="toggle">
+              <div class="slider-controls">
+                <label class="slider__toggle" for="btn-1"></label>
+                <label class="slider__toggle" for="btn-2"></label>
+                <label class="slider__toggle" for="btn-3"></label>
+              </div> 
+              <div id="slideMove" class="slide-wrapper--move">
+                  <div class="slide">
+                    <blockquote class="review__item">
+                      <cite class="review__author">Николай Петров</cite>
+                      <div class="review__author-about">25 лет, водитель трамвая</div>
+                      <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </blockquote>
+                  </div>
+                  <div class="slide">
+                    <blockquote class="review__item">
+                      <cite class="review__author">Николай Петров</cite>
+                      <div class="review__author-about">25 лет, водитель трамвая</div>
+                      <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati incidunt corrupti molestias omnis error ipsam officiis inventore, quis. Qui quasi architecto quis rem perspiciatis harum consectetur. Quidem tenetur labore dicta.</p>
+                    </blockquote>
+                  </div>
+                  <div class="slide">
+                    <blockquote class="review__item">
+                      <cite class="review__author">Николай Петров</cite>
+                      <div class="review__author-about">25 лет, водитель трамвая</div>
+                      <p class="review__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Встретил вдали меня, свое снова продолжил собрал они по всей своих снова буквенных однажды страну толку, великий диких сбить рекламных возвращайся.</p>
+                    </blockquote>
+                  </div>
+                </div>  
+              </ul>
+            </div>  
+          </div>  
+        </div>
+
+      </section>
+
+
+      <section class="price">
+        <table class="price-table">
+            <th>
+              <span class="price-table__tariff">База</span><span class="price-table__tariff-cost">1,99 USD</span>
+            </th>
+            <th>
+              <span class="price-table__tariff">Стандарт</span><span class="price-table__tariff-cost">3,99 USD</span>
+            </th>
+            <th>
+              <span class="price-table__tariff">Анлим</span><span class="price-table__tariff-cost">9,99 USD</span>
+            </th>
+          <tr>
+            <td class="price-table--check-on">Розовый фильтр</td><td class="price-table--check-on">Розовый фильтр</td><td class="price-table--check-on">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="price-table--check-off">Смайлики</td><td class="price-table--check-on">Смайлики</td><td class="price-table--check-on">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="price-table--check-off">Комментарии</td><td class="price-table--check-off">Комментарии</td><td class="price-table--check-on">Комментарии</td>
+          </tr>
+        </table>
+      </section>
+
+
+      <section class="contacts">
+        <p class="offer__title">Остались вопросы?<br> Свяжитесь с нами!</p>
+        <div class="contacts__items">
+          <div class="contacts__item contacts__item--phone">
+            <div class="contacts__item-header">Звоните:</div>
+            <a href="" class="contacts__item-text">+7 (812) 555 66-66</a>
+          </div>
+          <div class="contacts__item contacts__item--email">
+            <div class="contacts__item-header">Пишите:</div>
+            <a href="" class="contacts__item-text">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <div class="contacts__item-header">Приезжайте в гости</div>
+            <a href="" class="contacts__item-text">ул. Большая <br>
+            Конюшенная, 19/8</a>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="mapContainer">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1188.4602154023526!2d30.321699645775745!3d59.93639216180756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1467018385936" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="build/images/logotype-blue-desktop.png">
+            <img src="build/images/logo-pink-blue-mobile.svg" alt="Пинк">
+          </picture>
+        </a>
+      </div>
+      <ul class="social-links">
+        <li><a class="social-link  social-link--tw" href="https://vk.com/htmlacademy">Мы в Вконтакте</a></li>
+        <li><a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a></li>
+        <li><a class="social-link  social-link--youtube" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a></li>
+      </ul>
+      <div class="page-footer__designed">
+        <b class="page-footer-designed-text">Разработано</b>
+        <a class="page-footer-designed-ogo" href="http://htmlacademy.ru">
+          <img src="build/images/htmlacademy.png" alt="htmlacademy.ru">
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slider.js"></script>
+
+  </body>
+</html>
